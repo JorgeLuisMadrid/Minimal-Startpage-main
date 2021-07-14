@@ -148,7 +148,7 @@ input {
 .button[id = "github"]:hover{
 	border: none;
     background: none;
-  	color: #4a84be;
+  	color: #4abebe;
   	padding: 10px;
   	font-size: 15px;
     align-content: center;
@@ -167,10 +167,10 @@ input {
     font-family: 'SpaceMono-regular';
 }
 
-.button[id = "youtube"]:hover{
+.button[id = "linkedin"]:hover{
 	border: none;
     background: none;
-  	color: #b95a5a;
+  	color: #5a96b9;
   	padding: 10px;
   	font-size: 15px;
     align-content: center;
@@ -180,7 +180,18 @@ input {
 .button[id = "edX"]:hover{
 	border: none;
     background: none;
-  	color: #5ab9b4;
+  	color: #b7b95a;
+  	padding: 10px;
+  	font-size: 15px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+.button[id = "coursera"]:hover{
+	border: none;
+    background: none;
+  	color: #735ab9;
   	padding: 10px;
   	font-size: 15px;
     align-content: center;
