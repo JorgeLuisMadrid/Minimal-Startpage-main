@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Startpage</title>
+        <link href="CSS/startpage.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="JS/script.js"></script>
+    </head>
+	
+    <body onload="realTimeClock()" bgcolor="#2a2a2a">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner w3-animate-opacity">
+                    <div><p1 id="clock"></p1> <p1 id="ampm"></p1></div>
+                    <form id="form" role="search">
+                        <input type="search" id="query" name="q" placeholder="Search DuckDuckGo...">
+                    </form>  
+                    <script>
+                        const f = document.getElementById('form');
+                        const q = document.getElementById('query');
+                        const search = 'https://duckduckgo.com/?q=';
+
+                        function submitted(event) {
+                            event.preventDefault();
+                            const url = search + q.value + '&ia=web';
+                        window.open(url, '_self');
+                        }
+
+                        f.addEventListener('submit', submitted);
+                    </script>
+                    <p></p>	
+                    <!--<p2> twitter | youtube | twitch </p2> -->
+                    <button class="button" id="calendar"><a target="_blank" style="text-decoration: none" href="https://calendar.google.com/calendar/u/0/r">calendar</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="reddit"><a target="_blank" style="text-decoration: none" href="https://reddit.com">reddit</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="github"><a target="_blank" style="text-decoration: none" href="https://github.com/">github</a></button>
+                </div>
+                <div class="inner w3-animate-opacity">
+		    <button class="button" id="drive"><a target="_blank" style="text-decoration: none" href="https://drive.google.com/drive/u/0/my-drive">g drive</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="edX"><a target="_blank" style="text-decoration: none" href="https://www.edx.org/">edX</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="youtube"><a target="_blank" style="text-decoration: none" href="https://www.youtube.com/">youtube</a></button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
