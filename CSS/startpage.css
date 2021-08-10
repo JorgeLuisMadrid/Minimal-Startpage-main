@@ -34,6 +34,40 @@ header {
 	z-index:1;
 }
 
+.menu_name {
+  color: #807f7f;
+  text-align: center;
+  background-color: #0000006c;
+  font-family: 'SpaceMono-Regular';
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.bookmarks {
+  margin-top: 40px;
+  justify-content: center;
+  display: flex;
+}
+.menu_place {
+  width: 125px;
+  height: 200px;
+  background-color: #0000006c;
+  border-radius: 8px;
+  justify-content: center;
+  margin: 10px;
+}
+.list {
+  text-align: center;
+  display: block;
+  font-size: 32px;
+  margin-top: 10px;
+}
+.in_list {
+  border-radius: 15px;
+  height: 30px;
+}
+
 p1 {
     font-family: 'SpaceMono-Regular';
     -webkit-text-fill-color: #b4b4b4;
@@ -61,7 +95,8 @@ form {
 
 input {
     background-color: unset;
-    font: 16px 'SpaceMono-regular';
+    font-family: 'SpaceMono-Regular';
+    font: 16px;
     color: #fff;
     height: 100%;
     width: 100%;
@@ -177,7 +212,7 @@ input {
     text-align: center;
     font-family: 'SpaceMono-regular';
 }
-.button[id = "edX"]:hover{
+.button[id = "edx"]:hover{
 	border: none;
     background: none;
   	color: #b7b95a;
@@ -188,10 +223,21 @@ input {
     font-family: 'SpaceMono-regular';
 }
 
-.button[id = "coursera"]:hover{
+.button[id = "siiau"]:hover{
 	border: none;
     background: none;
-  	color: #735ab9;
+  	color: #765cbd;
+  	padding: 10px;
+  	font-size: 15px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+.button[id = "matlab"]:hover{
+	border: none;
+    background: none;
+  	color: #c97157;
   	padding: 10px;
   	font-size: 15px;
     align-content: center;
